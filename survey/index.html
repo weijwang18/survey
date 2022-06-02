@@ -17,7 +17,48 @@
       crossorigin="anonymous"
     ></script>
     <script src="scripts.js"></script>
-    <title>Document</title>
+    <title>Survey</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <form id="survey">
+        <label for="name">Tell us your name!</label>
+        <input id="name" class="form-control" type="text" />
+        <label for="food">What is your favorite food?</label>
+        <select class="form-control" id="favoriteFoods">
+          <option>Sushi</option>
+          <option>Pizza</option>
+          <option>Ramen</option>
+        </select>
+        <label for="music">What is your favorite music genre?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="genre" value="Blues" checked />
+            Blues
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="genre" value="Pop" />
+            Pop
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="genre" value="Rap" />
+            Rap
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date" />
+        </div>
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit!</button>
+      </form>
+    </div>
+  </body>
 </html>
